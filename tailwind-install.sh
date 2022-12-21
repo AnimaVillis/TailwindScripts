@@ -47,13 +47,13 @@ os.system(npmtailwind);
 if scripts == 'y' and pub == 'y':
     with open('package.json', 'r') as file:
         data = file.readlines();
-    data[6] = '"build": "tailwindcss build '+cssname_final+'.css -o public/style.css",\n"watch": "tailwindcss build '+cssname_final+' -o public/style.css -w"';
+    data[6] = '"build": "tailwindcss build '+cssname_final+'.css -o public/style.css",\n"watch": "tailwindcss build '+cssname_final+'.css -o public/style.css -w"';
     with open('package.json', 'w') as file:
         file.writelines(data);
 else:
     with open('package.json', 'r') as file:
         data = file.readlines();
-    data[6] = '"build": "tailwindcss build '+cssname_final+'.css -o style.css",\n"watch": "tailwindcss build '+cssname_final+' -o style.css -w"';
+    data[6] = '"build": "tailwindcss build '+cssname_final+'.css -o style.css",\n"watch": "tailwindcss build '+cssname_final+'.css -o style.css -w"';
     with open('package.json', 'w') as file:
         file.writelines(data);
 
