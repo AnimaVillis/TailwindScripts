@@ -62,4 +62,3 @@ os.system('clear');
 
 print('Thanks for using my script, all changed and updates are on my github:');
 print('https://github.com/AnimaVillis');
-print('Polish support forum for TailwindCSS - https://tailwind-forum.pl');
